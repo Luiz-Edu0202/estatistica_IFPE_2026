@@ -1,11 +1,3 @@
-import plotly.express as px
-from download import download_data
+from plot import plot_ts
 
-df = download_data('AAPL')
-
-px.line(
-    df,
-    x = 'Date',
-    y = 'Close',
-    title='AAPL Stock Price'
-    )
+plot_ts('MSFT')
